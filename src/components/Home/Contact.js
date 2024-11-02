@@ -35,9 +35,10 @@ function Contact({ contactRef }) {
         toast.success("Message send successfully");
         setInputs({ fullName: "", emailId: "", message: "" });
       })
-      .catch(() => {
+      .catch((error) => {
         toast.error("Message failed, Try E-mail, WhatsApp, or LinkedIn.");
         setSendText("Send message");
+        console.error(error);
       });
   };
 
