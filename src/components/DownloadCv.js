@@ -7,10 +7,10 @@ function DownloadCv({ fixed }) {
     <a
       href={resumeUrl}
       download="AdityaKumarResume.pdf"
-      className={`${fixed ? "fixed right-[5%] bottom-[8%] scale-90" : ""}`}
+      className={`${fixed ? "scale-90" : "self-start sm:self-center"}`}
     >
       <button
-        className={` flex items-center gap-4 border-none outline-none active:scale-95 hover:text-emerald-500 hover:bg-gray-700 transition-colors text-black font-semibold rounded-xl bg-gray-200 ${
+        className={`flex items-center gap-4 border-none outline-none active:scale-95 hover:text-emerald-500 hover:bg-gray-700 transition-colors text-black font-semibold rounded-xl bg-gray-200 ${
           fixed ? "p-2" : "px-6 py-3"
         }`}
       >

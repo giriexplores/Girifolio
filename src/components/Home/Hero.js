@@ -69,7 +69,7 @@ function Hero({ heroRef }) {
                 </a>
               </div>
             </div>
-            <div className="mx-auto bg-neutral-900 text-white flex flex-col gap-12 p-8 justify-center rounded-[4rem] max-w-48">
+            <div className="mx-auto bg-[#010f0a] text-white flex flex-col gap-12 p-8 justify-center rounded-3xl max-w-48">
               <h2 className="flex items-center gap-3">
                 <span className="text-4xl font-semibold text-emerald-500">
                   3

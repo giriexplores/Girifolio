@@ -42,7 +42,7 @@ function Skills({ skillsRef }) {
         <div className="flex gap-5 md:gap-20 flex-wrap mt-8 items-center justify-center">
           <div className="flex flex-col items-center gap-2 font-light border-s-8 border-blue-600 bg-emerald-100 text-black px-4 py-2 rounded-lg">
             <TbDeviceDesktopCode className="text-3xl" />
-            <h3 className="tracking-widest text-2xl text-center">
+            <h3 className="tracking-widest text-2xl text-center text-nowrap">
               Web Development
             </h3>
             <div className="flex gap-3 text-sm">
@@ -54,7 +54,7 @@ function Skills({ skillsRef }) {
           </div>
           <div className="flex flex-col items-center gap-2 font-light border-s-8 border-blue-600 bg-emerald-100 text-black px-7 py-2 rounded-lg">
             <LuBrainCircuit className="text-3xl" />
-            <h3 className="tracking-widest text-2xl text-center">
+            <h3 className="tracking-widest text-2xl text-center text-nowrap">
               Problem Solving
             </h3>
             <div className="flex gap-3 text-sm">

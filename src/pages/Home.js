@@ -31,7 +31,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="bg-gray-800 w-full">
+    <div className="bg-gray-800 w-full overflow-x-clip">
       <Navbar
         heroRef={heroRef}
         aboutRef={aboutRef}
@@ -51,8 +51,12 @@ function Home() {
       <Skills skillsRef={skillsRef} />
       <Contact contactRef={contactRef} />
       <Footer />
-      {visible && <BackToTop />}
-      {visible && <DownloadCv fixed = {true}/>}
+      {visible && (
+        <div className="flex flex-col gap-4 fixed bottom-[15%] right-[5%]">
+          <BackToTop />
+          <DownloadCv fixed={true} />
+        </div>
+      )}
     </div>
   );
 }

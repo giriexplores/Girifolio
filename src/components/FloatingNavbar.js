@@ -13,7 +13,7 @@ function FloatingNavbar({
   navHandler,
 }) {
   return (
-    <div className="hidden xl:flex fixed top-[25%] left-[5%] flex-col items-center gap-8 text-neutral-300 text-2xl bg-neutral-900 rounded-full p-4 border max-w-12">
+    <div className="hidden xl:flex fixed top-[25%] left-[5%] flex-col items-center gap-8 text-neutral-300 text-2xl bg-[#010f0a] rounded-full p-4 border max-w-12">
       <button
         className="border-none outline-none active:scale-95 hover:text-white"
         onClick={() => navHandler(heroRef.current)}

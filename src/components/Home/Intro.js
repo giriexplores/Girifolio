@@ -19,14 +19,14 @@ function Intro() {
         <p className="">Full-stack developer</p>
       </div>
       <div className="flex flex-col gap-3">
-        <div className="flex gap-3">
+        <a href="mailto:aditkumar0715@gmail.com" className="flex gap-3">
           <MdAlternateEmail className="text-xl text-emerald-500" />
           aditkumar0715@gmail.com
-        </div>
-        <div className="flex gap-3">
+        </a>
+        <a href="tel:+919817889068" className="flex gap-3">
           <IoCallOutline className="text-xl text-emerald-500" />
           +91 9817889068
-        </div>
+        </a>
         <div className="flex gap-3">
           <SlLocationPin className="text-xl text-emerald-500" />
           Sonipat, Haryana 131101
