@@ -12,49 +12,32 @@ function Hero({ heroRef }) {
     >
       {/* <FloatingNavbar /> */}
       <div className="flex items-center flex-col gap-16 w-full">
-        <h1 className="text-5xl md:text-8xl text-emerald-500">
-          Developer
-        </h1>
+        <h1 className="text-5xl md:text-8xl text-emerald-500">Developer</h1>
         <div className="flex flex-wrap justify-between w-full items-center gap-16">
-          <Intro />
+          <Intro className="order-1"/>
           <div className="flex items-center justify-between flex-wrap w-auto flex-auto gap-16">
-            <div className="flex flex-col gap-6 max-w-xl mx-auto">
+            <div className="flex flex-col gap-6 max-w-xl mx-auto ">
               <div className="flex flex-col text-3xl lg:text-6xl">
-                <span className=" -ms-8 text-sm text-emerald-500">
-                  &lt;h1&gt;
-                </span>
-                <p>Hey</p>
+                <p className="mb-2">Hey</p>
                 <p>
-                  I'm <span className="text-emerald-500">Aditya Kumar</span>,{" "}
+                  I'm <span className="text-emerald-500 ">Aditya Kumar</span>,{" "}
                 </p>
                 <Typewriter
                   options={{
-                    strings: [
-                      "Web Developer",
-                      "FullStack Developer",
-                      "BackEnd Developer",
-                      "FrontEnd Developer",
-                    ],
+                    strings: ["Web Developer", "FullStack Developer"],
                     autoStart: true,
-                    cursor: "|",
+                    delay: 50,
+                    deleteSpeed: 15,
+                    pauseFor: 1000,
                     loop: true,
                   }}
                 />
-                <span className="-ms-8 mt-4 text-sm text-emerald-500">
-                  &lt;/h1&gt;
-                </span>{" "}
               </div>
               <div>
-                <span className=" -ms-8 text-sm text-emerald-500">
-                  &lt;p&gt;
-                </span>
                 <p className="text-wrap">
                   I create highly interactive and well optimized solution for
                   personal and business usage. Feel free to contact me directly
                 </p>
-                <span className=" -ms-8 text-sm text-emerald-500">
-                  &lt;/p&gt;
-                </span>
               </div>
               <div className="flex gap-4 items-center text-emerald-500">
                 <h2 className="text-2xl lg:text-4xl font-semibold">
@@ -72,7 +55,7 @@ function Hero({ heroRef }) {
             <div className="mx-auto bg-[#010f0a] text-white flex flex-col gap-12 p-8 justify-center rounded-3xl max-w-48">
               <h2 className="flex items-center gap-3">
                 <span className="text-4xl font-semibold text-emerald-500">
-                  3
+                  2
                 </span>
                 <span>Programming Languages</span>
               </h2>
@@ -80,7 +63,7 @@ function Hero({ heroRef }) {
                 <span className="text-4xl font-semibold text-emerald-500">
                   5
                 </span>
-                <span> Development Tools </span>
+                <span> Development Tools</span>
               </h2>
               <h2 className="flex items-center gap-3">
                 <span className="text-4xl font-semibold text-emerald-500">

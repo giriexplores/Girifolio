@@ -5,7 +5,7 @@ import imgUrl from "../../assets/webDevelopment.png";
 function About({ aboutRef }) {
   return (
     <div ref={aboutRef} className="bg-slate-900">
-      <div className="flex flex-col gap-8 items-center w-10/12 mx-auto p-4 py-20 text-white max-w-[1920px] ">
+      <div className="flex flex-col gap-8 items-center w-10/12 mx-auto p-4 py-10 text-white max-w-[1920px] ">
         <div className=" hidden mb-32 md:flex flex-col gap-2 items-center">
           <LuMouse className="text-4xl text-emerald-500" />
           <span className="h-5 border-l-2 border-dotted"></span>
@@ -17,37 +17,34 @@ function About({ aboutRef }) {
               About Me
             </h2>
             <div className="flex flex-col gap-4 bg-gray-700 rounded-2xl px-8 py-4 tracking-wider">
-              <span className="text-emerald-200 text-base">&lt;p&gt;</span>
               <h3 className="text-2xl font-semibold text-emerald-500">
                 Hello!
               </h3>
               <p>
-                I'm Aditya Kumar and I specialize in web developement
-                that utilizes{" "}
-                <span className="text-emerald-500 font-bold">HTML</span>,{" "}
-                <span className="text-emerald-500 font-bold">CSS</span>,{" "}
+                I'm Aditya Kumar, a web developer skilled in{" "}
+
                 <span className="text-emerald-500 font-bold">JavaScript</span>,{" "}
-                <span className="text-emerald-500 font-bold">React.js</span>,{" "}
-                <span className="text-emerald-500 font-bold">Node.js</span>{" "}
-                <span className="text-emerald-500 font-bold">express.js</span>{" "}
+                <span className="text-emerald-500 font-bold">React</span>,{" "}
+                <span className="text-emerald-500 font-bold">Node.js</span>,{" "}
+                <span className="text-emerald-500 font-bold">Next.js</span>,{" "}
+                <span className="text-emerald-500 font-bold">Express</span>,{" "}
                 <span className="text-emerald-500 font-bold">MongoDB</span>,{" "}
-                and more.
+                <span className="text-emerald-500 font-bold">TypeScript</span>{" "}
+                and{" "}
+                <span className="text-emerald-500 font-bold">Socket.io</span> I
+                build efficient, scalable, and maintainable applications.
               </p>
               <p>
-                I am a highly motivated individual and eternal optimist
-                dedicated to writing clear, concise and robust code.
-              </p>
-              <p>
-                When I'm not coding, You'll find me listening{" "}
-                <span className="text-emerald-500 font-bold">music</span>,
-                reading books, or Trying out{" "}
+                Beyond coding, I enjoy{" "}
+                <span className="text-emerald-500 font-bold">music</span>,{" "}
+                <span className="text-emerald-500 font-bold">reading</span>,{" "}and
+                exploring {" "}
                 <span className="text-emerald-500 font-bold">photography</span>.
               </p>
               <p>
-                I like to have my perspective and belief systems challenged so
-                that I see the world through new eyes.
+                I welcome new perspectives and challenges that expand my
+                understanding of the world.
               </p>
-              <span className="text-emerald-200 text-base">&lt;/p&gt;</span>
             </div>
           </div>
           <div className="max-w-md 2xl:max-w-xl">

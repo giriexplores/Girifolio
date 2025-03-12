@@ -44,7 +44,7 @@ function Contact({ contactRef }) {
 
   return (
     <div ref={contactRef} className="w-full  bg-slate-900">
-      <div className="flex flex-col gap-8 items-center w-10/12 mx-auto p-4 py-20 text-white max-w-[1920px] ">
+      <div className="flex flex-col gap-8 items-center w-10/12 mx-auto p-4 py-10 text-white max-w-[1920px] ">
         <div className="flex flex-col gap-10">
           <div className="flex-col gap-2 items-center hidden md:flex justify-center">
             <LuMouse className="text-4xl text-emerald-500" />

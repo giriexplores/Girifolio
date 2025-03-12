@@ -5,6 +5,18 @@ import { IoCallOutline } from "react-icons/io5";
 import imageUrl from "../../assets/profilePic.png";
 import DownloadCv from "../DownloadCv";
 
+const skills = [
+  "JavaScript",
+  "React",
+  "Node.js",
+  "MongoDB",
+  "Express",
+  "git",
+  "TypeScript",
+  "Next.js",
+  "C++",
+];
+
 function Intro() {
   return (
     <div className=" flex flex-col mx-auto gap-7 items-center justify-center outline  rounded-ss-[10rem] rounded-ee-[10rem] px-4 py-14 max-w-sm border-emerald-500 border-s-4 border-t-4">
@@ -32,17 +44,9 @@ function Intro() {
           Sonipat, Haryana 131101
         </div>
         <div className="flex flex-wrap gap-2">
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">
-            JavaScript
-          </span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">React.js</span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">Node.js</span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">MongoDb</span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">
-            Express.js
-          </span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">Git</span>
-          <span className="px-2 py-1 bg-emerald-500  rounded-md">C++</span>
+          {skills.map((skill) => (
+            <span className="px-2 py-1 bg-emerald-500  rounded-md">{skill}</span>
+          ))}
         </div>
       </div>
       <DownloadCv fixed={false} />
