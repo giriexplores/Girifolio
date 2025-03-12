@@ -231,13 +231,17 @@ function Skills({ skillsRef }) {
           ))}
         </div>
         <div className="flex sm:gap-x-20 gap-x-12 gap-y-8 justify-center flex-wrap">
-          {skills.map((s) => (
-            <div className="flex flex-col items-center md:gap-1">
-              <span className={`md:text-5xl text-3xl text-[${s.color}]`}>
+          {skills.map((s, index) => (
+            <div key={index} className="flex flex-col items-center md:gap-1">
+              <span
+                className={`md:text-5xl text-3xl`}
+                style={{ color: s.color }}
+              >
                 {s.icon}
               </span>
               <h3
-                className={`text-lg text-nowrap md:text-lg font-bold text-[${s.color}]`}
+                className={`text-lg text-nowrap md:text-lg font-bold`}
+                style={{ color: s.color }}
               >
                 {s.name}
               </h3>

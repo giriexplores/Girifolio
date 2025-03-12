@@ -44,8 +44,8 @@ function Intro() {
           Sonipat, Haryana 131101
         </div>
         <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span className="px-2 py-1 bg-emerald-500  rounded-md">{skill}</span>
+          {skills.map((skill, index) => (
+            <span key={index} className="px-2 py-1 bg-emerald-500  rounded-md">{skill}</span>
           ))}
         </div>
       </div>
