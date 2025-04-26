@@ -220,7 +220,7 @@ export const PROJECTS = [
       "Real-time messaging application featuring an intuitive UI, instant message delivery, and seamless user interactions.",
     image: ChatItImage,
     github: [
-      "https://github.com/giriexplores/Chat-It-Backend",
+      "https://github.com/giriexplores/Chat-It-Frontend",
       "https://github.com/giriexplores/Chat-It-Backend",
     ],
     apiDocs: "https://documenter.getpostman.com/view/38948170/2sB2j1gBn1",
