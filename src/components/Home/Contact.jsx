@@ -43,35 +43,35 @@ function Contact({ contactRef }) {
   };
 
   return (
-    <div ref={contactRef} className="w-full  bg-slate-900">
-      <div className="flex flex-col gap-8 items-center w-10/12 mx-auto p-4 py-10 text-white max-w-[1920px] ">
+    <div ref={contactRef} className="w-full bg-slate-900">
+      <div className="mx-auto flex w-10/12 max-w-[1920px] flex-col items-center gap-8 p-4 py-10 text-white">
         <div className="flex flex-col gap-10">
-          <div className="flex-col gap-2 items-center hidden md:flex justify-center">
+          <div className="hidden flex-col items-center justify-center gap-2 md:flex">
             <LuMouse className="text-4xl text-emerald-500" />
             <span className="h-5 border-l-2 border-dotted"></span>
-            <span className="h-1 w-1 rounded-full bg-white -mt-1"></span>
+            <span className="-mt-1 h-1 w-1 rounded-full bg-white"></span>
           </div>
-          <div className="md:mt-2 flex flex-col items-center justify-center gap-4">
-            <h2 className="text-6xl text-emerald-500 text-center">Contact</h2>
-            <div className="flex gap-0 -mt-3 items-center">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              <span className="w-56 h-[2px] rounded-full bg-emerald-500"></span>
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <div className="flex flex-col items-center justify-center gap-4 md:mt-2">
+            <h2 className="text-center text-6xl text-emerald-500">Contact</h2>
+            <div className="-mt-3 flex items-center gap-0">
+              <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+              <span className="h-[2px] w-56 rounded-full bg-emerald-500"></span>
+              <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
             </div>
-            <p className="tracking-wider text-center">
+            <p className="text-center tracking-wider">
               I'm currently available for freelance work.
             </p>
           </div>
         </div>
-        <h2 className="mt-10 border-[2px] px-8 py-2 rounded-ss-[2rem] rounded-ee-[2rem] text-2xl md:text-3xl text-emerald-500 border-emerald-500 text-center">
+        <h2 className="mt-10 rounded-ss-[2rem] rounded-ee-[2rem] border-[2px] border-emerald-500 px-8 py-2 text-center text-2xl text-emerald-500 md:text-3xl">
           Send me a message
         </h2>
         <form
-          className="w-full mt-10 items-center flex flex-col gap-16"
+          className="mt-10 flex w-full flex-col items-center gap-16"
           onSubmit={submitHandler}
         >
-          <div className="flex justify-between w-full flex-wrap gap-16">
-            <div className="flex flex-col justify-start text-emerald-500 flex-1">
+          <div className="flex w-full flex-wrap justify-between gap-16">
+            <div className="flex flex-1 flex-col justify-start text-emerald-500">
               <label htmlFor="name">
                 Your name <sup className="text-red-500">*</sup>
               </label>
@@ -83,10 +83,10 @@ function Contact({ contactRef }) {
                 required
                 placeholder="Full Name"
                 name="fullName"
-                className="accent-emerald-500 bg-transparent outline-none border-b-2 p-2 text-lg border-emerald-500 mt-3 rounded-lg"
+                className="mt-3 rounded-lg border-b-2 border-emerald-500 bg-transparent p-2 text-lg accent-emerald-500 outline-none"
               />
             </div>
-            <div className="flex flex-col justify-start text-emerald-500 flex-1">
+            <div className="flex flex-1 flex-col justify-start text-emerald-500">
               <label htmlFor="emailId">
                 Your email <sup className="text-red-500">*</sup>
               </label>
@@ -98,11 +98,11 @@ function Contact({ contactRef }) {
                 required
                 placeholder="someone@example.com"
                 name="emailId"
-                className="accent-emerald-500 bg-transparent outline-none border-b-2 p-2 text-lg border-emerald-500 mt-3 rounded-lg"
+                className="mt-3 rounded-lg border-b-2 border-emerald-500 bg-transparent p-2 text-lg accent-emerald-500 outline-none"
               />
             </div>
           </div>
-          <div className="flex flex-col justify-start text-emerald-500 w-full">
+          <div className="flex w-full flex-col justify-start text-emerald-500">
             <label htmlFor="msg">
               Your message <sup className="text-red-500">*</sup>
             </label>
@@ -113,7 +113,7 @@ function Contact({ contactRef }) {
               required
               value={inputs?.message}
               placeholder="Write me something..."
-              className=" accent-emerald-500 bg-transparent outline-none border-b-2 p-2 text-lg border-emerald-500 mt-3 rounded-lg"
+              className="mt-3 rounded-lg border-b-2 border-emerald-500 bg-transparent p-2 text-lg accent-emerald-500 outline-none"
             />
           </div>
           <button
@@ -123,7 +123,7 @@ function Contact({ contactRef }) {
               !inputs.message ||
               sendText === "Sent Successfully"
             }
-            className="border-none outline-none inline-flex gap-3 items-center justify-center bg-emerald-500 hover:bg-emerald-400 active:scale-95 text-black font-semibold px-4 py-2 rounded-xl disabled:bg-emerald-500/40"
+            className="inline-flex items-center justify-center gap-3 rounded-xl border-none bg-emerald-500 px-4 py-2 font-semibold text-black outline-none hover:bg-emerald-400 active:scale-95 disabled:bg-emerald-500/40"
           >
             {sendText} {sendText === "Send message" && <GrSend />}{" "}
             {sendText === "Sent Successfully" && (

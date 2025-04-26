@@ -19,13 +19,13 @@ const skills = [
 
 function Intro() {
   return (
-    <div className=" flex flex-col mx-auto gap-7 items-center justify-center outline  rounded-ss-[10rem] rounded-ee-[10rem] px-4 py-14 max-w-sm border-emerald-500 border-s-4 border-t-4">
+    <div className="mx-auto flex max-w-sm flex-col items-center justify-center gap-7 rounded-ss-[10rem] rounded-ee-[10rem] border-s-4 border-t-4 border-emerald-500 px-4 py-14 outline">
       <div>
         <img
           src={imageUrl}
           alt="ProfilePic"
           width={150}
-          className="rounded-full border-2 border-emerald-500 m-4"
+          className="m-4 rounded-full border-2 border-emerald-500"
         />
         <h2 className="text-2xl font-semibold">Aditya Kumar</h2>
         <p className="">Full-stack developer</p>
@@ -45,7 +45,9 @@ function Intro() {
         </div>
         <div className="flex flex-wrap gap-2">
           {skills.map((skill, index) => (
-            <span key={index} className="px-2 py-1 bg-emerald-500  rounded-md">{skill}</span>
+            <span key={index} className="rounded-md bg-emerald-500 px-2 py-1">
+              {skill}
+            </span>
           ))}
         </div>
       </div>

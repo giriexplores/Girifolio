@@ -8,12 +8,14 @@ import FloatingNavbar from "../components/FloatingNavbar";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import DownloadCv from "../components/DownloadCv";
+import Projects from "../components/Home/Projects";
 
 function Home() {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const contactRef = useRef(null);
+  const projectRef = useRef(null);
 
   const navHandler = (ref) => {
     window.scrollTo({
@@ -31,11 +33,12 @@ function Home() {
   }, []);
 
   return (
-    <div className="bg-gray-800 w-full overflow-x-clip">
+    <div className="w-full overflow-x-clip bg-gray-800">
       <Navbar
         heroRef={heroRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
+        projectRef={projectRef}
         contactRef={contactRef}
         navHandler={navHandler}
       />
@@ -43,16 +46,18 @@ function Home() {
         heroRef={heroRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
+        projectRef={projectRef}
         contactRef={contactRef}
         navHandler={navHandler}
       />
       <Hero heroRef={heroRef} />
       <About aboutRef={aboutRef} />
       <Skills skillsRef={skillsRef} />
+      <Projects projectRef={projectRef} />
       <Contact contactRef={contactRef} />
       <Footer />
       {visible && (
-        <div className="flex flex-col gap-4 fixed bottom-[15%] right-[5%]">
+        <div className="fixed right-[5%] bottom-[15%] flex flex-col gap-4">
           <BackToTop />
           <DownloadCv fixed={true} />
         </div>

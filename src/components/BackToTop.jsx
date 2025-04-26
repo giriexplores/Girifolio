@@ -10,7 +10,7 @@ function BackToTop() {
   };
   return (
     <button
-      className="bg-emerald-500 rounded-full p-1 border-none outline-none active:scale-95 opacity-70 transition-opacity hover:opacity-100"
+      className="rounded-full border-none bg-emerald-500 p-1 opacity-70 transition-opacity outline-none hover:opacity-100 active:scale-95"
       onClick={topHandler}
     >
       <FaChevronUp className="text-4xl text-white" />

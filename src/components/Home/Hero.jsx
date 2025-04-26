@@ -6,71 +6,72 @@ import Typewriter from "typewriter-effect";
 
 function Hero({ heroRef }) {
   return (
-    <div
-      ref={heroRef}
-      className="flex gap-8 items-start w-10/12 mx-auto p-4 pb-16 text-white max-w-[1920px]"
-    >
-      {/* <FloatingNavbar /> */}
-      <div className="flex items-center flex-col gap-16 w-full">
-        <h1 className="text-5xl md:text-8xl text-emerald-500">Developer</h1>
-        <div className="flex flex-wrap justify-between w-full items-center gap-16">
-          <Intro className="order-1"/>
-          <div className="flex items-center justify-between flex-wrap w-auto flex-auto gap-16">
-            <div className="flex flex-col gap-6 max-w-xl mx-auto ">
-              <div className="flex flex-col text-3xl lg:text-6xl">
-                <p className="mb-2">Hey</p>
-                <p>
-                  I'm <span className="text-emerald-500 ">Aditya Kumar</span>,{" "}
-                </p>
-                <Typewriter
-                  options={{
-                    strings: ["Web Developer", "FullStack Developer"],
-                    autoStart: true,
-                    delay: 50,
-                    deleteSpeed: 15,
-                    pauseFor: 1000,
-                    loop: true,
-                  }}
-                />
+    <div ref={heroRef} className="bg-slate-900 bg-cover bg-no-repeat">
+      <div className="mx-auto flex w-10/12 max-w-[1920px] items-start gap-8 p-4 pb-16 text-white">
+        {/* <FloatingNavbar /> */}
+        <div className="flex w-full flex-col items-center gap-16">
+          <h1 className="text-5xl text-emerald-500 md:text-8xl">Developer</h1>
+          <div className="flex w-full flex-wrap items-center justify-between gap-16">
+            <Intro className="order-1" />
+            <div className="flex w-auto flex-auto flex-wrap items-center justify-between gap-16">
+              <div className="mx-auto flex max-w-xl flex-col gap-6">
+                <div className="flex flex-col text-3xl lg:text-6xl">
+                  <p className="mb-2">Hey</p>
+                  <p>
+                    I'm <span className="text-emerald-500">Aditya Kumar</span>
+                    ,{" "}
+                  </p>
+                  <Typewriter
+                    options={{
+                      strings: ["Web Developer", "FullStack Developer"],
+                      autoStart: true,
+                      delay: 50,
+                      deleteSpeed: 15,
+                      pauseFor: 1000,
+                      loop: true,
+                    }}
+                  />
+                </div>
+                <div>
+                  <p className="text-wrap">
+                    I create highly interactive and well optimized solution for
+                    personal and business usage. Feel free to contact me
+                    directly
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 text-emerald-500">
+                  <h2 className="text-2xl font-semibold lg:text-4xl">
+                    Let's Talk
+                  </h2>
+                  <a
+                    href="mailto:aditkumar0715@gmail.com"
+                    className="rounded-full border-none bg-gray-600 p-2 outline-none hover:bg-gray-700 active:scale-95"
+                  >
+                    {" "}
+                    <BsEnvelopePlus className="text-3xl" />{" "}
+                  </a>
+                </div>
               </div>
-              <div>
-                <p className="text-wrap">
-                  I create highly interactive and well optimized solution for
-                  personal and business usage. Feel free to contact me directly
-                </p>
-              </div>
-              <div className="flex gap-4 items-center text-emerald-500">
-                <h2 className="text-2xl lg:text-4xl font-semibold">
-                  Let's Talk
+              <div className="mx-auto flex max-w-48 flex-col justify-center gap-12 rounded-3xl bg-[#010f0a] p-8 text-white">
+                <h2 className="flex items-center gap-3">
+                  <span className="text-4xl font-semibold text-emerald-500">
+                    2
+                  </span>
+                  <span>Programming Languages</span>
                 </h2>
-                <a
-                  href="mailto:aditkumar0715@gmail.com"
-                  className="border-none rounded-full p-2 bg-gray-600 hover:bg-gray-700 outline-none active:scale-95"
-                >
-                  {" "}
-                  <BsEnvelopePlus className="text-3xl" />{" "}
-                </a>
+                <h2 className="flex items-center gap-3">
+                  <span className="text-4xl font-semibold text-emerald-500">
+                    5
+                  </span>
+                  <span> Development Tools</span>
+                </h2>
+                <h2 className="flex items-center gap-3">
+                  <span className="text-4xl font-semibold text-emerald-500">
+                    11
+                  </span>
+                  <span>Months of Experience on Personal Projects</span>
+                </h2>
               </div>
-            </div>
-            <div className="mx-auto bg-[#010f0a] text-white flex flex-col gap-12 p-8 justify-center rounded-3xl max-w-48">
-              <h2 className="flex items-center gap-3">
-                <span className="text-4xl font-semibold text-emerald-500">
-                  2
-                </span>
-                <span>Programming Languages</span>
-              </h2>
-              <h2 className="flex items-center gap-3">
-                <span className="text-4xl font-semibold text-emerald-500">
-                  5
-                </span>
-                <span> Development Tools</span>
-              </h2>
-              <h2 className="flex items-center gap-3">
-                <span className="text-4xl font-semibold text-emerald-500">
-                  8
-                </span>
-                <span>Months of Experience</span>
-              </h2>
             </div>
           </div>
         </div>

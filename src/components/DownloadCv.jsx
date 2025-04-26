@@ -10,7 +10,7 @@ function DownloadCv({ fixed }) {
       className={`${fixed ? "scale-90" : "self-start sm:self-center"}`}
     >
       <button
-        className={`flex items-center gap-4 border-none outline-none active:scale-95 hover:text-emerald-500 hover:bg-gray-700 transition-colors text-black font-semibold rounded-xl bg-gray-200 ${
+        className={`flex items-center gap-4 rounded-xl border-none bg-gray-200 font-semibold text-black transition-colors outline-none hover:bg-gray-700 hover:text-emerald-500 active:scale-95 ${
           fixed ? "p-2" : "px-6 py-3"
         }`}
       >
