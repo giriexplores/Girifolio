@@ -5,6 +5,7 @@ import { SiReact } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiMongoose } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -13,8 +14,9 @@ import { SiNextdotjs } from "react-icons/si";
 import { SiCplusplus } from "react-icons/si";
 import { SiGit } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
-// import { SiSqlite } from "react-icons/si";
-// import { SiPostgresql } from "react-icons/si";
+import { SiSqlite } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
+import { SiDrizzle } from "react-icons/si";
 // import { SiPython } from "react-icons/si";
 // import { FaJava } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
@@ -48,18 +50,21 @@ export const SKILLS = [
     color: "#e44d26",
     icon: <SiHtml5 />,
     tag: ["Frontend"],
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     name: "CSS",
     color: "#264de4",
     icon: <SiCss3 />,
     tag: ["Frontend"],
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     name: "JavaScript",
     color: "#f7df1e",
     icon: <SiJavascript />,
     tag: ["Frontend", "Programming Language"],
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
 
   {
@@ -67,30 +72,42 @@ export const SKILLS = [
     color: "#61DBFB",
     icon: <SiReact />,
     tag: ["Frontend", "Frameworks & Libraries"],
+    link: "https://react.dev/",
   },
   {
     name: "Redux",
     color: "#764abc",
     icon: <SiRedux />,
     tag: ["Frontend", "Frameworks & Libraries"],
+    link: "https://redux-toolkit.js.org/",
   },
   {
     name: "Node.js",
     color: "#3C873A",
     icon: <SiNodedotjs />,
     tag: ["Backend"],
+    link: "https://nodejs.org/en",
   },
   {
     name: "tailwindcss",
     color: "#00bcff",
     icon: <SiTailwindcss />,
     tag: ["Frontend"],
+    link: "https://tailwindcss.com/",
+  },
+  {
+    name: "shadcn/ui",
+    color: "white",
+    icon: <SiShadcnui />,
+    tag: ["Frontend", "Frameworks & Libraries"],
+    link: "https://ui.shadcn.com/",
   },
   {
     name: "Express",
     color: "white",
     icon: <SiExpress />,
     tag: ["Backend", "Frameworks & Libraries"],
+    link: "https://expressjs.com/",
   },
 
   {
@@ -98,6 +115,7 @@ export const SKILLS = [
     color: "#850000",
     icon: <SiMongoose />,
     tag: ["Backend", "Frameworks & Libraries"],
+    link: "https://mongoosejs.com/",
   },
 
   {
@@ -106,6 +124,7 @@ export const SKILLS = [
     icon: <SiNextdotjs />,
     info: "familiar",
     tag: ["Frontend", "Backend", "Frameworks & Libraries"],
+    link: "https://nextjs.org/",
   },
 
   {
@@ -113,18 +132,21 @@ export const SKILLS = [
     color: "#5E97D0",
     icon: <SiCplusplus />,
     tag: ["Programming Language"],
+    link: "https://isocpp.org/",
   },
   // {
   //   name: "Python",
   //   color: "#ffde57",
   //   icon: <SiPython />,
   //   tag: ["Programming Language"],
+  //   link: "https://www.python.org/",
   // },
   // {
   //   name: "java",
   //   color: "#f89820",
   //   icon: <FaJava />,
   //   tag: ["Programming Language"],
+  //   link: "https://www.java.com/en/",
   // },
   {
     name: "Socket.IO",
@@ -132,25 +154,35 @@ export const SKILLS = [
     icon: <SiSocketdotio />,
     info: "familiar",
     tag: ["Frameworks & Libraries"],
+    link: "https://socket.io/",
   },
-  // {
-  //   name: "PostgreSQL",
-  //   color: "#336791",
-  //   icon: <SiPostgresql />,
-  //   tag: ["Databases"],
-  // },
-  // {
-  //   name: "SQLite3",
-  //   color: "#0F80CC",
-  //   icon: <SiSqlite />,
-  //   info: "familiar",
-  //   tag: ["Databases"],
-  // },
+  {
+    name: "Drizzle ORM",
+    color: "#c5f74f",
+    icon: <SiDrizzle />,
+    tag: ["Backend", "Frameworks & Libraries"],
+    link: "https://orm.drizzle.team/",
+  },
+  {
+    name: "PostgreSQL",
+    color: "#336791",
+    icon: <SiPostgresql />,
+    tag: ["Databases"],
+    link: "https://www.postgresql.org/",
+  },
+  {
+    name: "SQLite3",
+    color: "#0F80CC",
+    icon: <SiSqlite />,
+    tag: ["Databases"],
+    link: "https://www.sqlite.org/index.html",
+  },
   {
     name: "MongoDB",
     color: "#00ED64",
     icon: <SiMongodb />,
     tag: ["Databases"],
+    link: "https://www.mongodb.com/",
   },
   {
     name: "TypeScript",
@@ -158,18 +190,21 @@ export const SKILLS = [
     icon: <SiTypescript />,
     info: "familiar",
     tag: ["Tools"],
+    link: "https://www.typescriptlang.org/",
   },
   {
     name: "git",
     color: "#F1502F",
     icon: <SiGit />,
     tag: ["Tools"],
+    link: "https://git-scm.com/",
   },
   {
     name: "VS Code",
     color: "#0078d7",
     icon: <VscVscode />,
     tag: ["Tools"],
+    link: "https://code.visualstudio.com/",
   },
 ];
 
@@ -202,7 +237,7 @@ export const PROJECTS = [
       "A full-featured e-commerce platform with product catalog, advanced search functionality, filtering options, and seamless cart management experience.",
     image: ShopItImage,
     github: ["https://github.com/giriexplores/shop-it-frontend"],
-    liveDemo: "https://girifolio-shop-it.netlify.app/",
+    liveDemo: "https://giriexplores-shop-it.netlify.app/",
     tech: ["React", "Redux", "Tailwind CSS", "Framer-motion"],
   },
   {
@@ -243,7 +278,7 @@ export const PROJECTS = [
       "Personal portfolio website showcasing skills and projects with responsive design and modern aesthetics.",
     image: GirifolioImage,
     github: ["https://github.com/giriexplores/girifolio"],
-    liveDemo: "https://girifolio.netlify.app/",
+    liveDemo: "https://giriexplores.netlify.app/",
     tech: ["React", "Tailwind CSS"],
   },
 ];

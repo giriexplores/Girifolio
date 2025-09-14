@@ -93,13 +93,15 @@ function Skills({ skillsRef }) {
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           {skills.map((s, index) => (
-            <div
+            <a
+              href={s.link}
+              target="_blank"
               key={index}
-              className="relative flex w-24 flex-col items-center justify-between rounded-md border-1 bg-gray-950 px-2 py-1 md:gap-1 md:px-4 md:py-2"
+              className="active:scale-95 cursor-pointer relative flex w-24 flex-col items-center justify-between rounded-md border-1 bg-gray-950 px-2 py-1 md:gap-1 md:px-4 md:py-2 group"
               style={{ borderColor: s.color }}
             >
               <span
-                className={`text-3xl md:text-5xl`}
+                className={`text-3xl md:text-5xl group-hover:translate-y-1 transition-all`}
                 style={{ color: s.color }}
               >
                 {s.icon}
@@ -115,7 +117,7 @@ function Skills({ skillsRef }) {
                   ({s.info})
                 </p>
               )}
-            </div>
+            </a>
           ))}
         </div>
       </div>

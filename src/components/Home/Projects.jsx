@@ -36,7 +36,7 @@ function Projects({ projectRef }) {
                 className="max-h-72 w-full border-b-2 border-gray-700 object-contain"
               />
 
-              <div className="flex w-full max-h-full flex-col justify-start p-4">
+              <div className="flex w-full h-full flex-col justify-between p-4">
                 <h2 className="text-xl font-bold text-white">
                   {project.title}
                 </h2>
