@@ -1,6 +1,6 @@
 import React from "react";
 import { LuMouse } from "react-icons/lu";
-import imgUrl from "../../assets/webDevelopment.png";
+import imgUrl from "../../assets/webDevelopment.jpeg";
 
 function About({ aboutRef }) {
   return (
@@ -47,7 +47,7 @@ function About({ aboutRef }) {
             </div>
           </div>
           <div className="max-w-md 2xl:max-w-xl">
-            <img src={imgUrl} alt="WebDevelopment" className="object-cover" />
+            <img src={imgUrl} alt="WebDevelopment" className="object-cover w-lg mix-blend-lighten rounded-2xl" />
           </div>
         </div>
       </div>

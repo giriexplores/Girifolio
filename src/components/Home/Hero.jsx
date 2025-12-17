@@ -1,5 +1,4 @@
 import React from "react";
-// import FloatingNavbar from "../FloatingNavbar";
 import { BsEnvelopePlus } from "react-icons/bs";
 import Intro from "./Intro";
 import Typewriter from "typewriter-effect";
@@ -8,7 +7,6 @@ function Hero({ heroRef }) {
   return (
     <div ref={heroRef} className="bg-slate-900 bg-cover bg-no-repeat">
       <div className="mx-auto flex w-10/12 max-w-[1920px] items-start gap-8 p-4 pb-16 text-white">
-        {/* <FloatingNavbar /> */}
         <div className="flex w-full flex-col items-center gap-16">
           <h1 className="text-5xl text-emerald-500 md:text-8xl">Developer</h1>
           <div className="flex w-full flex-wrap items-center justify-between gap-16">
@@ -55,7 +53,7 @@ function Hero({ heroRef }) {
               <div className="mx-auto flex max-w-48 flex-col justify-center gap-12 rounded-3xl bg-[#010f0a] p-8 text-white">
                 <h2 className="flex items-center gap-3">
                   <span className="text-4xl font-semibold text-emerald-500">
-                    2
+                    3
                   </span>
                   <span>Programming Languages</span>
                 </h2>
@@ -67,9 +65,9 @@ function Hero({ heroRef }) {
                 </h2>
                 <h2 className="flex items-center gap-3">
                   <span className="text-4xl font-semibold text-emerald-500">
-                    11
+                    1+
                   </span>
-                  <span>Months of Experience on Personal Projects</span>
+                  <span>Years of experience</span>
                 </h2>
               </div>
             </div>

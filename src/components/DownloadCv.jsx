@@ -1,12 +1,12 @@
 import React from "react";
-import resumeUrl from "../assets/AdityaKumar_webDeveloper.pdf";
+import resumeUrl from "../assets/AdityaKumar_fullStack_Developer.pdf";
 import { FaDownload } from "react-icons/fa6";
 
 function DownloadCv({ fixed }) {
   return (
     <a
       href={resumeUrl}
-      download="AdityaKumar_webDeveloper.pdf"
+      download="AdityaKumar_fullStack_Developer.pdf"
       className={`${fixed ? "scale-90" : "self-start sm:self-center"}`}
     >
       <button
