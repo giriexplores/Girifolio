@@ -7,16 +7,16 @@ function Footer() {
       <div className="flex items-end gap-1 text-emerald-500 hover:cursor-pointer">
         <img src={logo} width={30} alt="Logo" />
         <p className="logo me-4 -mb-1 text-3xl">iri</p>
-        &copy; 2024 All rights reserved.
+        &copy; {new Date().getFullYear()} All rights reserved.
       </div>
-      <ul className="text-md flex flex-row flex-wrap items-center gap-4">
+      {/* <ul className="text-md flex flex-row flex-wrap items-center gap-4">
         <li className="cursor-pointer select-none active:scale-95">
           Privacy Policy
         </li>
         <li className="cursor-pointer select-none active:scale-95">
           Terms & Conditions
         </li>
-      </ul>
+      </ul> */}
       <ul className="flex items-center gap-12">
         {SOCIALS.map((s, index) => (
           <li key={index} className="active:scale-95">
